@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    /*100vh altura em 100%*/
+    min-height: 100vh;
+    background: #101026;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/*CONFIGURA O MENU LISTA SOBREPOSTO*/
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    margin: 15px 10px;
+    color: white;
+    font-size: 38px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition-property: all;
+    transition-delay: 0.25s;
+    transition: ease-in-out;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid white;
+}
+
+/*CONFIGURA A SECTION EM GERAL*/
+section {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    font-size: 40px;
+    color: black;
+
+    text-align: center;
+}
+
+/*CONFIGURA QUALQUER TABELA INSERIDA DENTRO DA SECTION*/
+section table tr td a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+
+    text-align: center;
+}
+/*ALTERANDO OS LINKS AO PASSAR O MOUSE DA SESSÃO2 QUE ESTÃO DENTRO DA CÉLULA DA TABELA*/
+/*USANDO FILTRO*/
+section table tr td a:hover {
+    filter: blur(2px);
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+section h2 {
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+    background: #1d1d2e;
+}
+
+section h3 {
+    color: #f5f5f5;
+    font-size: 1.8rem;
+    margin: 2rem;
+    background: #1d1d2e;
+}
+
+/*CONFIGURA A SECTION ESPECÍFICA SESSAO4*/
+section#sessao4 {
+    display: flex;
+    alig-items: center;
+    jutify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*CONFIGURA O FORMULÁRIO DENTRO DA SESSÃO4*/
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #1d1d2e;
+}
+
+form label {
+    color: #f5f5f5;
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 17px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    transition: all 0.5s;
+}
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 17px;
+    outline: none;
+    border: 0;
+    font-size: 28px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form button {
+    color: #f5f5f5;
+    padding: 17px;
+    cursor: pointer;
+    font-size: 28px;
+    background: transparent;
+    border: 2px solid;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+form textarea:focus {
+    border-radius: 16px;
+}
+
+/*INSERE IMAGENS DE FUNDO NAS SESSÕES ESPECÍFICAS*/
+section:nth-of-type(1) {
+    background-image: url('images/fundoSessao1.jpg');
+}
+section:nth-of-type(2) {
+    background-image: url('images/fundoSessao2.jpg');
+}
+section:nth-of-type(3) {
+    background-image: url('images/fundoSessao3.png');
+}
+section:nth-of-type(4) {
+    background-image: url('images/fundoSessao4.jpg');
+}

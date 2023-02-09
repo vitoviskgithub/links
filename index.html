@@ -2,13 +2,223 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-  <title>HOME VITOVISK</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Personalizado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b39fd7c2f2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1>HOME SWEET HOME</h1>
+
+    <header><!--CABEÇALHO-->
+        <div class="containerTopo">
+
+            <div class="logo"><img src="img/logoVitorTavares100.png"></div>
+
+            <div class="menu">
+                <nav>
+                    <a href="#sessao1">HOME</a>
+                    <a href="https://vitoviskgithub.github.io/links/portifolio/index.html"
+                        target="_blank">PORTIFÓLIO</a>
+                    <a href="https://vitoviskgithub.github.io/links/pokerBankWeb.html" target="_blank">POK/WEB</a>
+                    <a href="#sessao4">CONTATO</a>
+                    <a href="#sessao5">HOPE</a>
+                </nav>
+            </div>
+
+            <!--O BOTÃO BURGUER PARA ACESSAR
+            O MENU MOBILE-->
+            <button onclick="animarMenu()" id="btnMenu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+
+            <div class="menuMobile" id="menuMobile">
+                <nav>
+                    <a href="#sessao1">HOME</a>
+                    <a href="https://vitoviskgithub.github.io/links/portifolio/index.html" target="_blank">
+                        PORTIFÓLIO</a>
+                    <a href="https://vitoviskgithub.github.io/links/pokerBankWeb.html" target="_blank">POK/WEB</a>
+                    <a href="#sessao4">CONTATO</a>
+                    <a href="#sessao5">HOPE</a>
+                </nav>
+            </div>
+
+            <div class="sociais">
+                <button><a href="https://www.instagram.com/vitovisk79/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></button>
+                <button><a href="https://www.twitch.tv/vitovisk2022" target="_blank"><i
+                            class="fa-brands fa-twitch"></i></a></button>
+                <button><a href="https://www.facebook.com/profile.php?id=100079900150579" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></button>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main><!--CENTRAL-->
+        <section id="sessao1">
+            <center>
+                <h1>SOLID</h1> <br>
+                <p><br>
+                <h3> O que é SOLID?</h3>
+                <br>
+                <h5>
+                    SOLID é um acrônimo criado por Michael Feathers, após observar que cinco princípios<br>
+                    da orientação a objetos e design de código, Criados por Robert C. Martin (a.k.a. Uncle Bob)<br>
+                    e abordados no artigo The Principles of OOD.
+                </h5><br>
+                <h3> Os 5 princípios</h3>
+                <br>
+                <ol>
+                    <li>
+                        <h5>
+                            S — Single Responsiblity Principle (Princípio da
+                            responsabilidade única)
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>O — Open-Closed Principle (Princípio Aberto-Fechado)</h5>
+                    </li>
+                    <li>
+                        <h5>L — Liskov Substitution Principle (Princípio da substituição de Liskov)</h5>
+                    </li>
+                    <li>
+                        <h5>I — Interface Segregation Principle (Princípio da Segregação da Interface)</h5>
+                    </li>
+                    <li>
+                        <h5>D — Dependency Inversion Principle (Princípio da inversão da dependência)</h5>
+                    </li>
+                </ol>
+                <br><br><br>
+                </p>
+
+                <h1>CRUD</h1> <br>
+                <p><br>
+                <h3> O que é CRUD?</h3>
+                <br>
+                <h5>
+                    No meio empresarial um CRUD é basicamente uma tela de cadastro, com operações em bancos de
+                    dados.<br>
+                    Mas não é bem assim, a sigla surgiu a partir das 4 operações básicas de um banco de dados,<br>
+                    Insert, Select, Update e Delete.<br>
+                    Então a sigla CRUD é um acrônimo, de quatro operações básicas.
+                </h5><br>
+                <h3> As 4 operações</h3>
+                <br>
+                <ol>
+                    <li>
+                        <h5>
+                            C — Create – Criar um novo registro
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>R — Read – Ler um registro, ou uma lista de registros</h5>
+                    </li>
+                    <li>
+                        <h5>U — Update – Atualizar um registro</h5>
+                    </li>
+                    <li>
+                        <h5>D — Delete – Excluir um registro</h5>
+                    </li>
+                </ol>
+                <br><br><br>
+                </p>
+            </center>
+
+        </section>
+
+        <section id="sessao2">
+            <center>
+                <h1><br>PORTIFÓLIO</h1>
+                <p><br>
+                <h5>
+                    O PORTIFÓLIO reúne alguns trabalhos e informações pessoas. Sempre buscando acrescentar<br>
+                    e atualizar o seu conteúdo. A área de TI é com certeza uma constante renovação de ferramentas<br>
+                    e conceitos.
+                </h5>
+                <br><br><br>
+                </p>
+
+            </center>
+        </section>
+
+        <section id="sessao3">
+            <center>
+                <h1><br>POKER BANK WEB (CRUD)</h1>
+
+                <p><br>
+                <h3>
+                    Área reservada para os investidores do Poker.
+                </h3>
+                <br><br><br>
+                </p>
+            </center>
+        </section>
+
+        <section id="sessao4">
+            <center>
+                <h1><br>vtvsk2022@gmail.com</h1>
+                <br><br><br>
+                </p>
+            </center>
+            </p>
+
+        </section>
+
+        <section id="sessao5">
+            <center>
+                <h1><br>HOPE (PES)</h1>
+
+                <p><br>
+                <h5>PES - Palavra, educação e saúde</h5><br>
+                <h3>
+                    Em breve mais informações (PROJETOS SOCIAS E CRISTÃOS).<br>
+                </h3>
+                <br><br><br>
+                </p>
+            </center>
+
+        </section>
+    </main>
+
+
+    <script>
+        /*constante que pega o id do menuMobile*/
+        const menuDivMobile = document.getElementById('menuMobile');
+        /*constante que pega o id do menu Burguer*/
+        const btn = document.getElementById('btnMenu');
+
+        /*ao clilcar em qualquer elemento
+        do menuMobile, também chama a função*/
+        menuDivMobile.addEventListener('click', animarMenu);
+
+        function animarMenu() {
+            menuDivMobile.classList.toggle('abrir');
+            /*se existir essa classe ele vai remover, 
+             se não ele vai adicionar ativar*/
+            /*animando MenuBuguer*/
+            btn.classList.toggle('ativar');
+        }
+
+    </script>
+
+    <footer>
+        <!--RODAPÉ-->
+
+        <div class="containerBottom">
+
+            <div class="bottomContent">
+
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>

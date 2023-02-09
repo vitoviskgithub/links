@@ -272,6 +272,12 @@ section h5{
     font-family: 'Lucida Sans';
 }
 
+section h6{
+    color: black;
+    font-size: 17px;
+    font-family: 'Lucida Sans';
+}
+
 /*COLORINDO AS SESSÕES*/
 
 section#sessao1{

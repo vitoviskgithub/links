@@ -594,7 +594,7 @@ section#sessao2 div#box4 a:hover{
    position: relative;
    display: flex;
    
-   height: 450px;
+   height: 520px;
     
    overflow: hidden;
    background: radial-gradient(ellipse at bottom, #1b2735 0%,#000000 100%);
@@ -1219,7 +1219,7 @@ section:nth-of-type(3) {
 /*BOTÃO SALDO*/
 button#btnSaldo{
     position: absolute;
-    top: -120%;
+    top: -75%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -1251,7 +1251,7 @@ button#btnSaldo:hover{
 /*BOTÃO GRADE TORNEIOS*/
 button#btnGrade{
     position: absolute;
-    top: -50%;
+    top: -20%;
     left: 50%;
     transform: translate(-50%, -50%);
    
@@ -1283,7 +1283,7 @@ button#btnGrade:hover{
 /*BOTÃO GRÁFICOS*/
 button#btnGraph{
     position: absolute;
-    top: 160%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
    
@@ -1317,7 +1317,7 @@ button#btnGraph:hover{
 /*BOTÃO SAIBA MAIS*/
 button#btnSaiba{
     position: absolute;
-    top: 230%;
+    top:185%;
     left: 50%;
     transform: translate(-50%, -50%);
    

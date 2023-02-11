@@ -18,7 +18,6 @@ html{
 }
 
 
-
 .containerTopo{
 
     max-width: 1080px;
@@ -364,14 +363,16 @@ section#sessao1{
     /*tirando espaçamento da vertical*/
     font-size: 0;
      background: linear-gradient(360deg, rgb(37, 157, 226), rgb(1, 24, 37));
+
+     
      
 }
 section#sessao1 img#imageS1{
     position: relative;
     width: 100%;
     height: 467px;
-    opacity: 10%;
-    }
+    opacity: 12%;
+   }
 
     section#sessao1 .box{       
        
@@ -395,18 +396,22 @@ section#sessao1 img#imageS1{
     }
 
       /*SESSÃO 2*/
+
 section#sessao2{
     /*a POSITION é relative para que 
     as BOX se alinhem*/
     position: relative;
 
-    background-color: rgb(10, 122, 170);
+    background-image: linear-gradient(180deg, rgb(19, 138, 207), rgb(0, 0, 0));
+   width: 100%;
 
-    width: 100%;
-    
+       
 }
 
+
 section#sessao2 div{
+
+    position: relative;
     
     display: inline-block;
 
@@ -426,18 +431,15 @@ section#sessao2 div{
 }
 
 
-section#sessao2 img{
-    position: relative;
-    top: 7px;
-}
 
 /*BOX1*/
 
 section#sessao2 div#box1{
+   
+   position: relative;
+   margin-bottom: 10px;
+
     
-    margin-top: 20px;
-    margin-right: 15px;
-    margin-bottom: 20px;
 }
 
 section#sessao2 div#box1 h1{
@@ -485,16 +487,17 @@ section#sessao2 div#box1 a{
 
 /*BOX2*/
 
+section#sessao2 div#box2{
+    position:relative;
+    margin-bottom: 10px;
+   
+          
+}
+
 section#sessao2 div#box2 a{
     text-decoration: none;
     }
 
-section#sessao2 div#box2{
-    
-    margin-top: 20px;
-    margin-right: 15px;
-    margin-bottom: 20px;
-}
 
 section#sessao2 div#box2 h1{
     font-family: 'Cuprum', sans-serif;
@@ -523,14 +526,14 @@ section#sessao2 div#box2 h2:hover{
 
 /*BOX3*/
 
-section#sessao2 div#box3 a{
-text-decoration: none;
+section#sessao2 div#box3{
+    position:relative;
+    margin-bottom: 10px;
+  
 }
 
-section#sessao2 div#box3{
-    margin-top: 20px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+section#sessao2 div#box3 a{
+text-decoration: none;
 }
 
 section#sessao2 div#box3 h1{
@@ -560,9 +563,9 @@ section#sessao2 div#box3 h2:hover{
 
 /*BOX4*/
 section#sessao2 div#box4{
-    margin-top: 20px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+    position:relative;
+    margin-bottom: 10px;
+   
 }
 section#sessao2 div#box4 h1{
     font-family: 'Cuprum', sans-serif;
@@ -581,38 +584,42 @@ section#sessao2 div#box4 a:hover{
     cursor: pointer;
     }
 
-
-
-
+ 
 /*SESSÃO 1 ATÉ A SESSÃO 2*/
 /*END*/
 
-/*COLORINDO AS SESSÕES*/
-section#sessao3{
-    background-color: #c0ced3;
+/*SESSÃO 3*/
+.sessao3{
+    
+   position: relative;
+   display: flex;
+   
+   
 }
-section#sessao4{
-    background-color: #9eb2b9;
-}
-section#sessao5{
-    background-color: #708c97;
-}
-
-.containerBottom{
-    max-width: 1080px;
-    /*posicionando o container
-    no centro*/
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.sessao3 div{
+    
+    width: 100%;   
+    background: #000000;
 }
 
+.sessao3 h1{
+
+    font-family: 'Cuprum', sans-serif;
+    color: #fff;
+    font-size: 32px;
+}
+
+
+/*FIM SESSÃO 3*/
+
+/*SESSÃO 4*/
+
+/*FIM SESSÃO 4*/
+
+/*SESSÃO 5*/
+
+/*FIM SESSÃO5*/
 
 footer{
-    background-image: linear-gradient(to top left, rgb(0,0,0), rgb(100,100,100));
-    width: 100%;
-    padding: 10px;
-
+  
 }

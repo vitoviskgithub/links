@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/b39fd7c2f2.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="popupToggle3.css">
+
+    <!--fonte importada-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -63,90 +66,106 @@
     <main><!--CENTRAL-->
 
         <!-- para fundo animado-->
-        <div class="wrapper">
 
-            <section id="sessao1">
+        <section id="sessao1">
 
-                <div class="box">
+            <div class="box">
 
-                    <h3>Olá, sou programador com experiência em (HTML, CSS, JS, JAVA, MYSQL).
-                        Estudei na Faculdade de Pedro Leopoldo/MG, cursando Ciências da Computação.
-                        Trabalhei por alguns anos como freelancer desenvolvendo websites.
-                        Meu interesse é que juntos possamos desenvolver seu projeto, de forma
-                        prática e com o visual limpo.<br><br>
-                        Tenho interesse de continuar aprendendo e evoluindo como programador ou em
-                        qualquer área que esteja atuando. Tenho projetos nas áreas mais diversas
-                        possíveis, como Projetos Sociais, e até Projetos Artísticos.
-                        As Abas Portifólio e Hope terão novas postagens acerca deste conteúdo.
+                <h3>Olá, sou programador com experiência em (HTML, CSS, JS, JAVA, MYSQL).
+                    Estudei na Faculdade de Pedro Leopoldo/MG, cursando Ciências da Computação.
+                    Trabalhei por alguns anos como freelancer desenvolvendo websites.
+                    Meu interesse é que juntos possamos desenvolver seu projeto, de forma
+                    prática e com o visual limpo.<br><br>
+                    Tenho interesse de continuar aprendendo e evoluindo como programador ou em
+                    qualquer área que esteja atuando. Tenho projetos nas áreas mais diversas
+                    possíveis, como Projetos Sociais, e até Projetos Artísticos.
+                    As Abas Portifólio e Hope terão novas postagens acerca deste conteúdo.
 
-                    </h3><br>
+                </h3><br>
+            </div>
+
+            <!--IMAGEM DE FUNDO-->
+            <center>
+                <img id="imageS1" src="img/officBackground.jpg">
+            </center>
+
+        </section>
+
+        <!--MENU INTERATIVO NO HTML-->
+
+        <section id="sessao2">
+            <div class="textoPort">
+                <h2>PORTIFÓLIO<br></h2>
+            </div>
+            <section class="container">
+                <h2> </h2>
+                <div class="content">
+                    <center>
+                        <a href="https://vitoviskgithub.github.io/links/portifolio/images/ARTES/queroMeApaixonar2.jpg">
+                            <img src="img/ARTES/queroMeApaixonar2.jpg" width="150" height="100"></img></a>
+                        <p>
+                        <h5>PARA EVENTO</h5>
+                        </p><br>
+
+                        <a href="https://vitoviskgithub.github.io/links/portifolio/images/ARTES/insta3.png">
+                            <img src="img/ARTES/insta3.png" width="65" height="100"></img></a>
+                        <a href="https://vitoviskgithub.github.io/links/portifolio/images/ARTES/insta4.png">
+                            <img src="img/ARTES/insta4.png" width="65" height="100"></img></a>
+
+                        <p>
+                        <h5>INSTAGRAM</h5>
+                        </p><br><br><br><br>
+
+                        <p><a href="index.html" target="_self">
+                                <h2>PÁGINA INICIAL</h2>
+                            </a></p><br>
+                    </center>
                 </div>
 
-                <!--IMAGEM DE FUNDO-->
-                <center>
-                    <img id="imageS1" src="img/officBackground.jpg">
-                </center>
-
-            </section>
-
-            <!--MENU INTERATIVO NO HTML-->
-
-            <section id="sessao2">
-                <div class="textoPort">
-                    <h2>PORTIFÓLIO<br></h2>
+                <div class="togglebtn">
                 </div>
-                <section class="container">
-                    <h2> </h2>
-                    <div class="content">
-                        <center>
-                            <a
-                                href="https://vitoviskgithub.github.io/links/portifolio/images/ARTES/queroMeApaixonar2.jpg">
-                                <img src="img/ARTES/queroMeApaixonar2.jpg" width="150" height="100"></img></a>
-                            <p>
-                            <h5>PARA EVENTO</h5>
-                            </p><br>
-
-                            <a href="https://vitoviskgithub.github.io/links/portifolio/images/ARTES/insta3.png">
-                                <img src="img/ARTES/insta3.png" width="65" height="100"></img></a>
-                            <a href="https://vitoviskgithub.github.io/links/portifolio/images/ARTES/insta4.png">
-                                <img src="img/ARTES/insta4.png" width="65" height="100"></img></a>
-
-                            <p>
-                            <h5>INSTAGRAM</h5>
-                            </p><br><br><br><br>
-
-                            <p><a href="index.html" target="_self">
-                                    <h2>PÁGINA INICIAL</h2>
-                                </a></p><br>
-                        </center>
-                    </div>
-
-                    <div class="togglebtn">
-                    </div>
 
 
-                    <script>
-                        /*instaciando as classes nas variáveis tipo let*/
-                        let togglebtn = document.querySelector('.togglebtn');
-                        let container = document.querySelector('.container');
-                        /*ao clicar no togglebtn adiciona 'active'*/
-                        togglebtn.onclick = function () {
-                            container.classList.toggle('active');
-                        }
+                <script>
+                    /*instaciando as classes nas variáveis tipo let*/
+                    let togglebtn = document.querySelector('.togglebtn');
+                    let container = document.querySelector('.container');
+                    /*ao clicar no togglebtn adiciona 'active'*/
+                    togglebtn.onclick = function () {
+                        container.classList.toggle('active');
+                    }
 
-                    </script>
+                </script>
 
-                </section>
             </section>
+        </section>
+
+        <section class="sessao3" id="sessao3">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="title">
+                <a href="https://vitoviskgithub.github.io/links/img/relatorios/saldo.pdf" target="_blank"><button
+                        id="btnSaldo">SALDO INVESTIDORES</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/relatorios/grade.pdf" target="_blank"><button
+                        id="btnGrade">GRADE TORNEIO</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/graficos.html" target="_blank"><button
+                        id="btnGraph">GRÁFICOS</button></a>
+                <a href="https://vitoviskgithub.github.io/links/saibamaispoker.html" target="_blank"><button
+                        id="btnSaiba">SAIBA MAIS</button></a>
+                <span>&spades;POKER BANK&spades;</span>
+                <br>
+                <h1>Let's play</h1>
+            </div>
+        </section>
+        <section class="sessao4">
+
+        </section>
 
 
-            <section class="sessao3">
-                <div id="caixote">
-                    <h1>TESTAGASDFDAS</h1>
-                </div>
-            </section>
 
     </main>
+
 
 
     <script>

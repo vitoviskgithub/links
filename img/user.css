@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: #2c2e33;
+}
+
+.user h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.user h1:hover{
+    font-size: 40px;
+  color: rgb(62, 117, 180);
+ text-decoration: none;
+
+   
+ }
+
+.user a{
+  text-decoration: none;    
+}
+
+.user h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(62, 117, 180);
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 3px rgb(172, 231, 255);
+    
+    
+}

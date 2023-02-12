@@ -138,11 +138,7 @@ os ícones são como fontes*/
     /*descendo o menu*/
     transition: 0.5s;
 
-    /*quando fechar o menu os botões
-    vão no mesmo momento*/
-    overflow: hidden;
     
-
 }
 
 .menuMobile nav a{

@@ -126,11 +126,12 @@ os ícones são como fontes*/
     
     top:120px;
     left: 0;
+    
 
     width: 100%;
     /*100 vh toma toda altura da
     tela independente do tamanho dela*/
-    height: 100vh;
+    height: 100%;
 
     visibility: hidden;
 

@@ -43,12 +43,12 @@ body{
 .user h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     
 }
 .user h1:hover{
-    font-size: 40px;
+    font-size: 25px;
   color: #4ea2f0;
  text-decoration: none;
  
@@ -63,7 +63,7 @@ transition: 0.2s;
 .user h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #4ea2f0;
-    font-size: 50px;
+    font-size: 37px;
     font-weight: bold;
     -webkit-text-stroke: 3px #1d1d2e;
     
@@ -73,7 +73,7 @@ transition: 0.2s;
 .user h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #1d1d2e;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     
     
@@ -83,7 +83,7 @@ transition: 0.2s;
 .user h3:hover{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
      
     transition: 0.3s;

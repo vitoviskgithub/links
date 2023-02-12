@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,12 +7,39 @@
 
 body{
 
-    background: #2c2e33;
+    background: #1d1d2e;
 }
 .user{
-    position: absolute;
-    text-align: left;
+
+    position: relative;
+    
+    left: 20px;
+    right: 0;
+    top: 20px;
+    bottom: 20px;
+   
+
+        text-align: center;
+        
+
+    width: 400px;
+    height: 520px;
+    
+    padding-top: 15px;
+    
+    background: #7d7d85;
+
+    border-radius: 10px;
+
+    border: 4px solid #749bbe;
 }
+
+.user ol{
+    /*list-style-image: ;*/
+    /*list-style-position: outside;*/
+    list-style-type: none;
+}
+
 .user h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
@@ -21,9 +49,10 @@ body{
 }
 .user h1:hover{
     font-size: 40px;
-  color: rgb(62, 117, 180);
+  color: #4ea2f0;
  text-decoration: none;
-
+ 
+transition: 0.2s;
    
  }
 
@@ -33,30 +62,29 @@ body{
 
 .user h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(151, 183, 221);
+    color: #4ea2f0;
     font-size: 50px;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 3px #1d1d2e;
     
     
 }
 
 .user h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(62, 117, 180);
+    color: #1d1d2e;
     font-size: 50px;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
+    
     
     
 }
 
 .user h3:hover{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 50px;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
-    
-    
+     
+    transition: 0.3s;
 }

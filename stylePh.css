@@ -414,9 +414,10 @@ section#sessao2{
     
 }
 .textoPort h2{
-       font-family: 'Cuprum', sans-serif;
-       font-size: 40px;
-       color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #1d1d2e;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 

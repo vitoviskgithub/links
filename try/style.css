@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: white;
+
+}
+
+.principal{
+  /*ocupa 100% da tela com estas configurações*/
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  
+}
+.principal img{
+  /*REMOVE O ESPAÇAMENTO ENTRE A IMAGEM
+  E A DIV ABAIXO, pois a img se não declarado
+  o vertical-align já vem com valor padrão*/
+  vertical-align: top;
+}
+
+.cabecalho{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+
+  background: linear-gradient(180deg, #292828, rgb(75, 73, 73) 10%, #292828);
+  /*ocultando espaço em branco*/
+  margin-bottom: -5px;
+}
+.cabecalho{
+
+}
+
+.rodape{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+
+  background: linear-gradient(180deg, #292828, rgb(75, 73, 73) 10%, #292828);
+  margin-bottom: -5px;
+}

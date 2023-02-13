@@ -35,12 +35,19 @@ tem que estar junto a class container
 e não .container . active*/
 .container.active {
    
-    width: 400px;
+    width: 350px;
     height: 500px;
     /*transição do popu(box)
     efeito aparece*/
 
     transition: 0.5s;
+}
+
+.content{
+    /*alinhando os elementos de acordo com 
+    a box do conteúdo de .container*/
+    margin-left: -20px;
+    
 }
 
 .container::before {

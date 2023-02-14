@@ -21,25 +21,26 @@ body{
   height: 100%;
   /*background-image: linear-gradient(to bottom, #000000 30%, #241f1f 70%,#292828 100% );*/
   background-image: url(img/sallonBackground.jpg);
-  background-position: 200%;
+  background-position: 0;
+  background-repeat: no-repeat;
 
   
 }
 
-
+/*A IMAGEM DA PLACA COM A LOGO*/
 
 .principal img{
   /*REMOVE O ESPAÇAMENTO ENTRE A IMAGEM
   E A DIV ABAIXO, pois a img se não declarado
   o vertical-align já vem com valor padrão*/
   vertical-align: top;
-  margin-left: 30px;
+  margin-left: 0;
   
 }
 
 .principal .menu h1{
   color: #c57751;
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Smokum', cursive;
   
 
@@ -47,7 +48,7 @@ body{
   
 }
 .principal .menu{
-width: 150px;
+width: 100px;
 height: 600px;
 display: inline-block;
 position: relative;
@@ -95,7 +96,7 @@ justify-content: center;/*alinha na horizontal*/
   height: 310px;
   margin: 30px;
 
-  left: 13px;
+  left: -30px;
 
   box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
   border-radius: 15px;
@@ -143,7 +144,7 @@ transition: 1.6s;
   z-index: 1;
   }
   .meio .card .content p{
-      font-size: 1em;
+      font-size: 0.8em;
       color: #fff;
       font-weight: 300;
       font-family: 'Times New Roman', Times, serif;

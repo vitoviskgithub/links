@@ -143,10 +143,13 @@
             <div id="stars2"></div>
             <div id="stars3"></div>
             <div id="title">
-               <a href="https://vitoviskgithub.github.io/links/img/relatorios/saldo.pdf" target="_blank"><button id="btnSaldo">SALDO INVESTIDORES</button></a>
-                <a href="https://vitoviskgithub.github.io/links/img/relatorios/grade.pdf"target="_blank" ><button id="btnGrade">GRADE TORNEIO</button></a>
-                <a href="https://vitoviskgithub.github.io/links/img/graficos.html"target="_blank" ><button id="btnGraph">GRÁFICOS</button></a>
-                <a href="https://vitoviskgithub.github.io/links/saibamaispoker.html"target="_blank" ><button id="btnSaiba">SAIBA MAIS</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/relatorios/saldo.pdf" target="_blank"><button
+                        id="btnSaldo">SALDO INVESTIDORES</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/relatorios/grade.pdf" target="_blank"><button
+                        id="btnGrade">GRADE TORNEIO</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/graficos.html" target="_blank"><button
+                        id="btnGraph">GRÁFICOS</button></a>
+                <button id="btnSaiba" onclick="abrirAlerta()">SAIBA MAIS</button>
                 <span>&spades;POKER BANK&spades;</span>
                 <br>
                 <h1>Let's play</h1>
@@ -155,7 +158,7 @@
 
 
         <section class="sessao4">
-         
+
         </section>
 
 
@@ -195,5 +198,20 @@
     </footer>
 
 </body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function abrirAlerta() {
+        swal({
+            title: "VIAGEM NO TEMPO",
+            text: "Você está indo para o Velho Oeste, boa viagem!",
+            icon: "success",
+            button: "OK",
+        });
+
+        window.open("https://vitoviskgithub.github.io/links/site_poker_web/index.html",
+            "", "width=1000, height=1000");
+    }
+</script>
 
 </html>

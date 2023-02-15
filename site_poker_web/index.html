@@ -7,87 +7,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKER BANK WEB</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        @keyframes load {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .pre {
+            width: 60px;
+            height: 60px;
+
+            border: rgba(0, 0, 0, 0.18) solid 2px;
+            border-left-color: rgb(201, 50, 4);
+            border-radius: 50%;
+
+            animation: load 1.2s linear infinite;
+        }
+
+        .box-load {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .conteudo {
+            display: none;
+            
+        }
+    </style>
+    <script>
+        function loading() {
+            /*ocultar o conteúdo incialmente*/
+            /*quando seletamos por CLASS temos que
+            dizer a posição dela*/
+            /*box-load é onde esta o pre(preload)*/
+            document.getElementsByClassName('box-load')[0].style.display = 'none';
+            
+            /*agora o conteúdi*/
+            document.getElementsByClassName('conteudo')[0].style.display = 'block';
+        }
+    </script>
+
 </head>
+<html>
 
-<body>
+<body onload="loading()">
+    <div class="box-load">
+        <div class="pre"></div>
+    </div>
+    <div class="conteudo">
 
 
 
-    <div class="principal">
+        <div class="principal">
 
 
-        <div class="menu">
-            <a id="btnMenu">
-                <h1>MENU</h1>
-            </a>
+            <div class="menu">
+                <a id="btnMenu">
+                    <h1>MENU</h1>
+                </a>
+            </div>
+
+            <div class="meio">
+                <img src="img/oldewestplate.png">
+                <div class="card">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>BEM-VINDOS</h3>
+                        <p>Esta é a plataforma digital para WEB,
+                            do aplicativo POKER BANK. O POKER BANK é
+                            uma API que busca gerenciar dados de
+                            meus investidores do poker. Além de ser
+                            programador, dentro dos horários disponíveis
+                            eu jogo poker recreativamente.
+
+                        </p>
+                        <a href="#">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="meio">
-            <img src="img/oldewestplate.png">
-            <div class="card">
-                <div class="content">
-                    <h2>03</h2>
-                    <h3>BEM-VINDOS</h3>
-                    <p>Esta é a plataforma digital para WEB,
-                        do aplicativo POKER BANK. O POKER BANK é
-                        uma API que busca gerenciar dados de
-                        meus investidores do poker. Além de ser
-                        programador, dentro dos horários disponíveis
-                        eu jogo poker recreativamente.
 
-                    </p>
-                    <a href="#">Mais informações</a>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.5,
+            });
+        </script>
+
+        <div class="flip-card">
+
+            <div class="flip-card-inner">
+
+                <div class="flip-card-front">
+
+                </div>
+                <div class="flip-card-back" id="flip-card-backID">
+                    <p id="title1ID" class="title1"><a href="#">USUÁRIO</a></p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flip-card2">
+            <div class="flip-card-inner2">
+                <div class="flip-card-front2">
+
+                </div>
+                <div class="flip-card-back2">
+                    <p id="titleID2" class="title2"><a href="#">SALDOS</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card3">
+            <div class="flip-card-inner3">
+                <div class="flip-card-front3">
+
+                </div>
+
+                <div class="flip-card-back3">
+                    <p id="titleID3" class="title3"><a href="#">GRAPHIC</a></p>
                 </div>
             </div>
         </div>
     </div>
-
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".card"), {
-            max: 25,
-            speed: 400,
-            glare: true,
-            "max-glare": 0.5,
-        });
-    </script>
-
-    <div class="flip-card">
-
-        <div class="flip-card-inner">
-
-            <div class="flip-card-front">
-
-            </div>
-            <div class="flip-card-back" id="flip-card-backID">
-                <p id="title1ID" class="title1"><a href="#">USUÁRIO</a></p>
-
-            </div>
-        </div>
-
     </div>
 
-    <div class="flip-card2">
-        <div class="flip-card-inner2">
-            <div class="flip-card-front2">
 
-            </div>
-            <div class="flip-card-back2">
-                <p id="titleID2" class="title2"><a href="#">SALDOS</a></p>
 
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card3">
-        <div class="flip-card-inner3">
-            <div class="flip-card-front3">
-
-            </div>
-
-            <div class="flip-card-back3">
-                <p id="titleID3" class="title3"><a href="#">GRAPHIC</a></p>
-            </div>
-        </div>
     </div>
 
 </body>

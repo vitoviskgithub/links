@@ -5,502 +5,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POKER BANK WEB</title>
+    <title>VÍTOR TAVARES</title>
+
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        @keyframes load {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .pre {
-            width: 60px;
-            height: 60px;
-
-            border: rgba(0, 0, 0, 0.18) solid 2px;
-            border-left-color: rgb(201, 50, 4);
-            border-radius: 50%;
-
-            animation: load 1.2s linear infinite;
-        }
-
-        .box-load {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-        }
-
-        .conteudo {
-            display: none;
-            
-        }
-    </style>
-    <script>
-        function loading() {
-            /*ocultar o conteúdo incialmente*/
-            /*quando seletamos por CLASS temos que
-            dizer a posição dela*/
-            /*box-load é onde esta o pre(preload)*/
-            document.getElementsByClassName('box-load')[0].style.display = 'none';
-            
-            /*agora o conteúdi*/
-            document.getElementsByClassName('conteudo')[0].style.display = 'block';
-        }
-    </script>
-
+    <script src="https://kit.fontawesome.com/b39fd7c2f2.js" crossorigin="anonymous"></script>
+    <!--fonte importada-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
-<html>
 
-<body onload="loading()">
-    <div class="box-load">
-        <div class="pre"></div>
-    </div>
-    <div class="conteudo">
+<body>
 
+    <header><!--CABEÇALHO-->
+        <div class="containerTopo">
 
-
-        <div class="principal">
-
+            <div class="logo"><img src="img/logoVitorTavaresSemfundo.png"></div>
 
             <div class="menu">
-                <a id="btnMenu">
-                    <h1>MENU</h1>
-                </a>
+                <nav>
+                    <a href="#sessao1">SOBRE</a>
+                    <a href="#sessao2">PORTIFÓLIO</a>
+                    <a href="#sessao3">POKER</a>
+                    <a href="contato.html" target="_blank">CONTATO</a>
+                    <a href="hope.html" target="_blank">HOPE</a>
+                </nav>
             </div>
 
-            <div class="meio">
-                <img src="img/oldewestplate.png">
-                <div class="card">
-                    <div class="content">
-                        <h2>03</h2>
-                        <h3>BEM-VINDOS</h3>
-                        <p>Esta é a plataforma digital para WEB,
-                            do aplicativo POKER BANK. O POKER BANK é
-                            uma API que busca gerenciar dados de
-                            meus investidores do poker. Além de ser
-                            programador, dentro dos horários disponíveis
-                            eu jogo poker recreativamente.
+            <!--O BOTÃO BURGUER PARA ACESSAR
+            O MENU MOBILE-->
+            <button onclick="animarMenu()" id="btnMenu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
 
-                        </p>
-                        <a href="#">Mais informações</a>
-                    </div>
-                </div>
+            <div class="menuMobile" id="menuMobile">
+                <nav>
+                    <a href="#sessao1">SOBRE</a>
+                    <a href="#sessao2">PORTIFÓLIO</a>
+                    <a href="#sessao3">POKER</a>
+                    <a href="contato.html" target="_blank">CONTATO</a>
+                    <a href="hope.html" target="_blank">HOPE</a>
+                </nav>
             </div>
+
+            <div class="sociais">
+                <button><a href="https://www.instagram.com/vitovisk79/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></button>
+                <button><a href="https://www.twitch.tv/vitovisk2022" target="_blank"><i
+                            class="fa-brands fa-twitch"></i></a></button>
+                <button><a href="https://www.facebook.com/profile.php?id=100079900150579" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></button>
+            </div>
+
 
         </div>
+    </header>
 
-        <script type="text/javascript" src="vanilla-tilt.js"></script>
-        <script>
-            VanillaTilt.init(document.querySelectorAll(".card"), {
-                max: 25,
-                speed: 400,
-                glare: true,
-                "max-glare": 0.5,
-            });
-        </script>
+    <main><!--CENTRAL-->
+        <section id="sessao1">
 
-        <div class="flip-card">
+            <div class="box">
 
-            <div class="flip-card-inner">
+                <h3>Olá, sou programador com experiência em (HTML, CSS, JS, JAVA, MYSQL).
+                    Estudei na Faculdade de Pedro Leopoldo/MG, cursando Ciências da Computação.
+                    Trabalhei por alguns anos como freelancer desenvolvendo websites.
+                    Meu interesse é que juntos possamos desenvolver seu projeto, de forma
+                    prática e com o visual limpo.<br><br>
+                    Tenho interesse de continuar aprendendo e evoluindo como programador ou em
+                    qualquer área que esteja atuando. Tenho projetos nas áreas mais diversas
+                    possíveis, como Projetos Sociais, e até Projetos Artísticos.
+                    As Abas Portifólio e Hope terão novas postagens acerca deste conteúdo.
 
-                <div class="flip-card-front">
-
-                </div>
-                <div class="flip-card-back" id="flip-card-backID">
-                    <p id="title1ID" class="title1"><a href="#">USUÁRIO</a></p>
-
-                </div>
+                </h3><br>
             </div>
 
-        </div>
+            <!--IMAGEM DE FUNDO-->
+            <center>
+                <img id="imageS1" src="img/officBackground.jpg">
+            </center>
 
-        <div class="flip-card2">
-            <div class="flip-card-inner2">
-                <div class="flip-card-front2">
+        </section>
+
+        <section id="sessao2">
+
+            <center>
+                <div id="box1">
+                    <h1>GIT HUB</h1>
+                    <img width="50" height="40" src="img/GitHubLogo.png"></img>
+                    <a href="https://github.com/vitoviskgithub/PokerBank" target="_blank">
+                        <h2><br>DESKTOP PROJECTS(CRUD)</h2>
+                    </a>
+                    <a href="https://github.com/vitoviskgithub/PokerBankWeb" target="_blank">
+                        <h2><br>WEB PROJECTS</h2>
+                    </a>
+                    <h3><br>(Em constate atualização)</h3>
+                </div>
+
+
+                <div id="box2">
+                    <h1>DESIGN</h1>
+                    <a href="indexInterativoPh.html" target="_self">
+                        <h2><br>PHOTOSHOP</h2>
+                        <img width="40" height="40" src="img/photoshop.png"></img>
+                    </a>
+                    <a href="indexInterativoInsta.html" target="_self">
+                        <h2><br>INSTAGRAM</h2>
+                        <img width="40" height="40" src="img/instagram.png"></img>
+                    </a><br>
+                </div>
+
+                <div id="box3">
+                    <h1>ARTIGOS + </h1>
+                    <a href="https://www.alura.com.br/artigos/html-css-e-js-definicoes/" target="_blank">
+                        <h2><br>HTML/CSS/JS</h2>
+                        <img width="100" height="40" src="img/htmlcssjs.png"></img>
+                    </a>
+                    <a href="https://programadoresdepre.com.br/o-que-e-crud/" target="_blank">
+                        <h2><br>API(CRUD)</h2>
+                        <img width="100" height="40" src="img/crud100.png"></img>
+                    </a><br>
+                </div>
+
+                <div id="box4">
+                    <p>
+                        <a href="https://www.linkedin.com/in/v%C3%ADtor-tavares-afonso-71b472265" target="_blank">
+                            <img height="155px" src="img/LinkedInlogo155.png"><br>
+                            <h1>LINKEDIN</h1>
+                        </a>
+                    </p>
 
                 </div>
-                <div class="flip-card-back2">
-                    <p id="titleID2" class="title2"><a href="#">SALDOS</a></p>
 
-                </div>
+        </section>
+
+        <section class="sessao3" id="sessao3">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="title">
+                <a href="https://vitoviskgithub.github.io/links/img/relatorios/saldo.pdf" target="_blank"><button
+                        id="btnSaldo">SALDO INVESTIDORES</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/relatorios/grade.pdf" target="_blank"><button
+                        id="btnGrade">GRADE TORNEIO</button></a>
+                <a href="https://vitoviskgithub.github.io/links/img/graficos.html" target="_blank"><button
+                        id="btnGraph">GRÁFICOS</button></a>
+                <button id="btnSaiba" onclick="abrirAlerta()">SAIBA MAIS</button>
+                <span>&spades;POKER BANK&spades;</span>
+                <br>
+                <h1>Let's play</h1>
             </div>
+        </section>
+
+
+        <section class="sessao4">
+
+        </section>
+
+
+    </main>
+
+
+    <script>
+        /*constante que pega o id do menuMobile*/
+        const menuDivMobile = document.getElementById('menuMobile');
+        /*constante que pega o id do menu Burguer*/
+        const btn = document.getElementById('btnMenu');
+
+        const sessao = document.getElementById('sessao1');
+
+        /*ao clilcar em qualquer elemento
+        do menuMobile, também chama a função*/
+        menuDivMobile.addEventListener('click', animarMenu);
+
+        function animarMenu() {
+            menuDivMobile.classList.toggle('abrir');
+            /*se existir essa classe ele vai remover, 
+             se não ele vai adicionar ativar*/
+            /*animando MenuBuguer*/
+            btn.classList.toggle('ativar');
+
+            sessao.classList.toggle('sumir');
+        }
+
+    </script>
+
+    <footer>
+        <!--RODAPÉ-->
+
+        <div class="containerBottom">
+
         </div>
-
-        <div class="flip-card3">
-            <div class="flip-card-inner3">
-                <div class="flip-card-front3">
-
-                </div>
-
-                <div class="flip-card-back3">
-                    <p id="titleID3" class="title3"><a href="#">GRAPHIC</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    </div>
+    </footer>
 
 </body>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function abrirAlerta() {
+        swal({
+            title: "VIAGEM NO TEMPO",
+            text: "Você está indo para o Velho Oeste, boa viagem!",
+            icon: "success",
+            button: "OK",
+        });
 
-<style>
-    /*ITENS DO MENU*/
-
-    /*APARECENDO TITLE 1*/
-
-    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ultra&display=swap');
-
-
-    #title1ID {
-        position: absolute;
-        z-index: 1;
-        /*eixo Z, coloca o elemento sobreposto outro*/
-        font-size: 13px;
-        font-family: 'Abril Fatface', cursive;
-
-        text-align: center;
-        color: #000;
-
-        border: #000000 solid 3px;
-        background: #f12449;
-
-        opacity: 1;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        window.open("https://vitoviskgithub.github.io/links/site_poker_web/index.html",
+            "", "width=1000, height=1000");
     }
-
-    #title1ID a {
-        text-decoration: none;
-        color: #000;
-
-    }
-
-    #title1ID a:hover {
-        text-decoration: none;
-        color: #fff;
-
-    }
-
-
-    #titleID2 {
-        position: absolute;
-        z-index: 1;
-        /*eixo Z, coloca o elemento sobreposto outro*/
-        font-size: 13px;
-        font-family: 'Abril Fatface', cursive;
-
-        text-align: center;
-        color: #000000;
-
-        border: #000000 solid 3px;
-        background: #6e6c6c;
-
-        opacity: 1;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #titleID2 a {
-        text-decoration: none;
-        color: #000000;
-
-    }
-
-    #titleID2 a:hover {
-        text-decoration: none;
-        color: #fff;
-
-    }
-
-
-    #titleID3 {
-        position: absolute;
-        z-index: 1;
-        /*eixo Z, coloca o elemento sobreposto outro*/
-        font-size: 13px;
-        font-family: 'Abril Fatface', cursive;
-
-        text-align: center;
-        color: #000;
-        /*-webkit-text-stroke: #ffffff 1px;*/
-
-        border: #000000 solid 3px;
-        background: #f12449;
-
-        opacity: 1;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #titleID3 a {
-        text-decoration: none;
-        color: #000;
-
-    }
-
-    #titleID3 a:hover {
-        text-decoration: none;
-        color: #fff;
-
-    }
-
-    .flip-card {
-        background-color: transparent;
-        width: 70px;
-        height: 115px;
-
-        position: absolute;
-        top: 100px;
-        left: 20px;
-
-        font-family: sans-serif;
-        cursor: pointer;
-    }
-
-    .flip-card2 {
-        background-color: transparent;
-        width: 70px;
-        height: 115px;
-        position: absolute;
-        top: 255px;
-        left: 20px;
-
-        font-family: sans-serif;
-        cursor: pointer;
-    }
-
-    .flip-card3 {
-        background-color: transparent;
-        width: 70px;
-        height: 115px;
-
-        position: absolute;
-        top: 415px;
-        left: 20px;
-
-        font-family: sans-serif;
-        cursor: pointer;
-    }
-
-
-
-    /*responsável por abrigar as divs com conteúdo cas cartas*/
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        /*nas rotações comunns o eixo Z é ignorado
-                com a propriedade preserve-3d não*/
-        transform-style: preserve-3d;
-    }
-
-    /*quando passar o mouse sobre a matriz
-                os conteúdos DIV que tem dentro da
-                DIV flip-card-inner se alteram, porque
-                oque vai girar é a DIV PAI, flip-card-inner*/
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    /*INNER 2*/
-    /*responsável por abrigar as divs com conteúdo cas cartas*/
-    .flip-card-inner2 {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        /*nas rotações comunns o eixo Z é ignorado
-                com a propriedade preserve-3d não*/
-        transform-style: preserve-3d;
-    }
-
-    /*quando passar o mouse sobre a matriz
-                os conteúdos DIV que tem dentro da
-                DIV flip-card-inner se alteram, porque
-                oque vai girar é a DIV PAI, flip-card-inner*/
-    .flip-card2:hover .flip-card-inner2 {
-        transform: rotateY(180deg);
-    }
-
-    /*INNER 3*/
-    /*responsável por abrigar as divs com conteúdo cas cartas*/
-    .flip-card-inner3 {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        /*nas rotações comunns o eixo Z é ignorado
-                com a propriedade preserve-3d não*/
-        transform-style: preserve-3d;
-    }
-
-    /*quando passar o mouse sobre a matriz
-                os conteúdos DIV que tem dentro da
-                DIV flip-card-inner se alteram, porque
-                oque vai girar é a DIV PAI, flip-card-inner*/
-    .flip-card3:hover .flip-card-inner3 {
-        transform: rotateY(180deg);
-    }
-
-    /*CARD 1*/
-    .flip-card-front,
-    .flip-card-back {
-        box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-        /*é ABSOLUTE, ou seja, em relação
-                    a um elemento PAI, que no caso
-                    é flip-card-inner, que está configurado como RELATIVE*/
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        border: 1px solid coral;
-        border-radius: 1rem;
-    }
-
-    .flip-card-front {
-        background: url('img/behindcard.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .flip-card-back {
-        background: url('img/frontcard.jpg');
-        color: rgb(126, 25, 25);
-        /*gira a carta de trás para que o texto
-                        não apareça ao contrário*/
-        transform: rotateY(180deg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-
-        filter: blur(2px);
-    }
-
-    .flip-card-back:hover {
-        filter: blur(0);
-
-        transition: filter 0.2s ease-out;
-
-    }
-
-
-    /*CARD 2*/
-    .flip-card-front2,
-    .flip-card-back2 {
-        box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-        /*é ABSOLUTE, ou seja, em relação
-                    a um elemento PAI, que no caso
-                    é flip-card-inner, que está configurado como RELATIVE*/
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        border: 1px solid coral;
-        border-radius: 1rem;
-    }
-
-    .flip-card-front2 {
-        background: url('img/behindcard.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .flip-card-back2 {
-        background: url('img/acesPaus.png');
-        color: rgb(126, 25, 25);
-        /*gira a carta de trás para que o texto
-                        não apareça ao contrário*/
-        transform: rotateY(180deg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-
-        filter: blur(2px);
-    }
-
-    .flip-card-back2:hover {
-        filter: blur(0);
-
-        transition: filter 0.2s ease-out;
-
-    }
-
-    /*CARD 3*/
-    .flip-card-front3,
-    .flip-card-back3 {
-        box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-        /*é ABSOLUTE, ou seja, em relação
-                    a um elemento PAI, que no caso
-                    é flip-card-inner, que está configurado como RELATIVE*/
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        border: 1px solid coral;
-        border-radius: 1rem;
-    }
-
-    .flip-card-front3 {
-        background: url('img/behindcard.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .flip-card-back3 {
-        background: url('img/acesOuros.png');
-        color: rgb(126, 25, 25);
-        /*gira a carta de trás para que o texto
-                        não apareça ao contrário*/
-        transform: rotateY(180deg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-
-        filter: blur(2px);
-    }
-
-    .flip-card-back3:hover {
-        filter: blur(0);
-
-        transition: filter 0.2s ease-out;
-
-    }
-
-
-    /*FIM DOS INTENS*/
-</style>
+</script>
 
 </html>

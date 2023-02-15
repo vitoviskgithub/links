@@ -20,9 +20,10 @@ html, body{
   height: 100%;
   /*background-image: linear-gradient(to bottom, #000000 30%, #241f1f 70%,#292828 100% );*/
   background-image: url(img/sallonBackground.jpg);
-  background-position: 0;
-  background-repeat: no-repeat;
-
+  /*config padrões para background*/
+  background-position: center top;
+  background-repeat: no-repeat;   
+  background-size: cover;
   
 }
 
